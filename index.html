@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>calculator_task</title>
+    <link rel="stylesheet" href="./src/style.css" />
+    <script type="module" src="/src/script.ts"></script>
+  </head>
+  <body>
+    <div class="application">
+      <div class="calculator">
+        <div class="display">
+          <p class="expression">0</p>
+        </div>
+        <div id="buttons" class="buttons">
+          <button class="button operation" name="clear">AC</button>
+          <button class="button operation" name="pow">^</button>
+          <button class="button operation" name="mod">%</button>
+          <button class="button operation" name="division">/</button>
+          <button class="button number" name="7">7</button>
+          <button class="button number" name="8">8</button>
+          <button class="button number" name="9">9</button>
+          <button class="button operation" name="multiplication">*</button>
+          <button class="button number" name="4">4</button>
+          <button class="button number" name="5">5</button>
+          <button class="button number" name="6">6</button>
+          <button class="button operation" name="subtraction">-</button>
+          <button class="button number" name="1">1</button>
+          <button class="button number" name="2">2</button>
+          <button class="button number" name="3">3</button>
+          <button class="button operation" name="addition">+</button>
+          <button class="button empty" disabled></button>
+          <button class="button number" name="0">0</button>
+          <button class="button operation" name="fraction">.</button>
+          <button class="button operation" name="solve">=</button>
+        </div>
+      </div>
+      <div class="history">
+        <button class="button open" id="history-btn">History</button>
+
+        <div class="modal" id="history-modal">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h3>История вычислений</h3>
+              <button id="clear-history" class="clear-btn">X</button>
+            </div>
+            <div id="history-list"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
